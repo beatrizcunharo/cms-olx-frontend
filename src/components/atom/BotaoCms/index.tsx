@@ -16,6 +16,7 @@ export const BotaoCms = (props: BotaoCmsProps) => {
             botaoCms ${cor && cor === 'roxo' ? 'cor_primaria' : ''}
         `}
         onClick={onClick}
+        aria-label={texto}
         >
             {texto}
         </button>
