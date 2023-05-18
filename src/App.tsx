@@ -1,9 +1,10 @@
 import './app.scss'
+import './styles/container.scss'
 
 function App() {
 
   return (
-    <div className="app">
+    <div>
       Aqui
     </div>
   )

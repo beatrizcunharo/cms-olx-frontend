@@ -1,14 +1,16 @@
+import { ReactNode } from 'react'
 import './styles.scss'
 
 interface BotaoCmsProps {
     cor?:  "roxo"
+    children: ReactNode
     texto: string
     style?: string
     onClick: (props: any) => any
 }
 
 export const BotaoCms = (props: BotaoCmsProps) => {
-    const { cor, texto, style, onClick} = props
+    const { cor, children, texto, style, onClick} = props
 
     return (
         <button className={`
@@ -18,7 +20,7 @@ export const BotaoCms = (props: BotaoCmsProps) => {
         onClick={onClick}
         aria-label={texto}
         >
-            {texto}
+            {children}
         </button>
     )
 } 

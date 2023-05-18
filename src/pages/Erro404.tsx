@@ -1,4 +1,4 @@
-import '../styles/pages.scss'
+import '../styles/erro404.scss'
 
 export const Erro404 = () => {
     return (
